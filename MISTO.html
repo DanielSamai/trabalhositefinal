@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>EXATAS.com - Resistores</title>
+        <link rel="stylesheet" href="final.css">
+        <style>
+            body{
+                background-color: #fffdc8;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="substitution">
+            <p>Resistores</p>
+            <h1>Associação de Resistores em SÉRIE<br><br><br><img src="serie.jpg" width="100%" height="100%"> </h1>
+            <h2>Associação de Resistores é um circuito que apresenta dois ou mais resistores. Há três tipos de associação: em paralelo, em série e mista.<br><br>Ao analisar um circuito, podemos encontrar o valor do resistor equivalente, ou seja, o valor da resistência que sozinha poderia substituir todas as outras sem alterar os valores das demais grandezas associadas ao circuito.<br><br>Para calcular a tensão que os terminais de cada resistor está submetido aplicamos a Primeira Lei de Ohm:<br><br><br><b>U = R . i</b><br><br><b>U:</b> diferença de potencial elétrico (ddp), medida em Volts (V)<br><b>R:</b> resistência, medida em Ohm (Ω)<br><b>i:</b> intensidade da corrente elétrica, medida em Ampére (A).<br><br><br>Na associação de resistores em série, os resistores são ligados em sequência. Isso faz com que a corrente elétrica seja mantida ao longo do circuito, enquanto a tensão elétrica varia.<br>Assim, a resistência equivalente (Req) de um circuito corresponde à soma das resistências de cada resistor presente no circuito<br><br><br><br><br>https://www.todamateria.com.br/associacao-de-resistores/</h2>
+        </div>
+        <script>
+            let div = document.querySelector('#substitution');
+            let minhah2 = document.createElement('p');
+            let texto = document.createTextNode("Esses conteúdos foram retirados de seus devidos sites, e não foram desenvolvidos pelo criador da página, os devidos links referentes as materias retiradas estão em baixo de cada escrita.")
+            minhah2.appendChild(texto);
+            div.appendChild(minhah2);
+
+            let choice = parseInt(prompt("Digite... 1 - Resistores em paralelo; 2 - Resistores em série;"));
+            if(choice==1){
+                let texth1=document.querySelector("h1")
+                texth1.innerHTML='<h1> Associação de Resistores em PARALELO <h1> <img src="paral.jpg" width="100%" height="100%">';
+                let texth2=document.querySelector("h2")
+                texth2.innerHTML='<h2>Os resistores são dispositivos que transformam energia elétrica em energia térmica por meio do Efeito Joule, dissipando assim a energia produzida por uma fonte de tensão. Quando colocados nos circuitos elétricos, eles têm o objetivo de limitar a corrente que atravessa o circuito. Porém, nem sempre podemos encontrar um resistor com a resistência que precisamos, mas podemos fazer uma combinação de resistores para obter um valor equivalente ao necessário. Essa combinação é denominada de associação de resistores. <br> <br>A associação de resistores pode ser feita em série e em paralelo.<br><br><br><br>Na associação de resistores em paralelo, a resistência equivalente sempre é menor que a resistência de menor valor que o circuito apresenta.<br><br>Quando um dos resistores da associação em paralelo queima, a corrente elétrica que circula nos demais componentes do circuito não é alterada.<br><br>Em virtude dessa segunda propriedade, os circuitos elétricos residenciais e de iluminação pública são todos em paralelo. Se fossem em série, quando a lâmpada de um cômodo parasse de funcionar, todas as demais lâmpadas também parariam, pois isso impediria a passagem da corrente elétrica.<br><br><br><br><br>https://mundoeducacao.uol.com.br/fisica/associacao-resistores-paralelo.htm<h2>';
+            }
+        </script>
+    </body>
+</html>

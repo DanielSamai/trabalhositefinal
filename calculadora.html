@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>EXATAS.com - Calculadora</title>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel='icon' type='image/png' href="icon3.png">
+        <style>
+            body{
+                font-family: 'Anton', sans-serif;
+                margin-left: 13%;
+                margin-right: 13%;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                background-color: #fffdc8;
+                color: #e84112;
+                border-style: double;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            let num1 = parseInt( prompt("Entre com o primeiro numero:") ); 
+            let num2 = parseInt( prompt("Entre com o segundo numero:") ) ;
+            const sinal = prompt("Entre com o sinal que você deseja utilizar: \n (- + * /)") 
+            if (sinal == '-')
+            {
+                alert(`A diferença entre ${num1} e ${num2} e de ${num1-num2}`);
+            }
+            if (sinal == '*')
+            {
+                alert(`A multiplicação de ${num1} e ${num2} e de ${num1*num2}`);
+            }
+            if (sinal == '/')
+            {
+                alert(`A divisão de ${num1} por ${num2} e de ${num1/num2}`);
+            }
+            if (sinal == '+')
+            {
+                alert(`A soma de ${num1} e ${num2} e de ${num1+num2}`);
+            }
+        </script>
+        <h1>Para calcular novamente, é só atualizar a página, caso queira voltar para a página inicial é só <a href="index.html">Clicar aqui</a></h1>
+    </body>
+</html>
